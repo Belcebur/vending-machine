@@ -105,7 +105,8 @@ final class VendingMachine
                             $return = array_merge($return, $coinValues);
                         } else {
                             $return[] = $product->getName();
-                            $return[] = "Return change " . $change * -1;
+
+                            $return[] = $change !== 0.0 ? "Return change " . $change * -1: 'Exact price';
                             /** @var Coin $coin */
                             foreach ($changeCoins['coins'] as $item) {
                                 $return[] = "Return {$item['coin']->getValue()} x {$item['needed']}";
