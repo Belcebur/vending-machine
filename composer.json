@@ -1,0 +1,27 @@
+{
+  "name": "belcebur/vending-machine",
+  "description": "Vending machine by Prompt",
+  "authors": [
+    {
+      "name": "David García Gordo",
+      "email": "garcia.gordo.david@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.4"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7"
+  },
+  "autoload": {
+    "psr-0": {
+      "VendingMachine": [
+        "src",
+        "tests"
+      ]
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit --version"
+  }
+}
