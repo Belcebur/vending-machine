@@ -1,5 +1,8 @@
 ## Vending machine by Prompt
 
+### Pre-install
+
+`run composer install`
  
 ### Tests: `./bin/vendor/phpunit`
 
